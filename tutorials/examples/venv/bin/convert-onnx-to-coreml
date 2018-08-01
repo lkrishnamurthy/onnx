@@ -1,0 +1,11 @@
+#!/Users/lkrishna/git/onnx/tutorials/examples/venv/bin/python3.6
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from onnx_coreml.bin.convert import onnx_to_coreml
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(onnx_to_coreml())
